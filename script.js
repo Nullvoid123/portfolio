@@ -1,0 +1,15 @@
+const text = "Aspiring Data Scientist | AI Enthusiast | Web Developer";
+let index = 0;
+
+function typeEffect() {
+  if (index < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 80);
+  }
+}
+
+typeEffect();
+function toggleDark(){
+  document.body.classList.toggle("dark");
+}
