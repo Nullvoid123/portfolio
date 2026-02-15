@@ -1,15 +1,18 @@
+// Typing Effect
 const text = "Aspiring Data Scientist | AI Enthusiast | Web Developer";
 let index = 0;
 
-function typeEffect() {
-  if (index < text.length) {
+function typeEffect(){
+  if(index < text.length){
     document.getElementById("typing").innerHTML += text.charAt(index);
     index++;
-    setTimeout(typeEffect, 80);
+    setTimeout(typeEffect,80);
   }
 }
 
 typeEffect();
+
+// Dark Mode
 function toggleDark(){
   document.body.classList.toggle("dark");
 }
